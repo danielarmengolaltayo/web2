@@ -1,0 +1,248 @@
+/*GENERAL*/
+
+html {
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+body {
+    margin: 30px 35px 30px 35px;
+    padding: 0px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif, Arial;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000;
+    background-color: #ffffff;
+    font-weight: bold;
+    
+    /*mobile*/
+    -webkit-text-size-adjust:none;
+    -ms-text-size-adjust:none;
+    -moz-text-size-adjust:none;
+    text-size-adjust:none;
+}
+
+hproject {
+    display: block;
+    text-align: left;
+    margin: 0px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 42px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #00f; 
+    text-decoration: none;
+    border-bottom: 2px solid #00f;
+    padding-bottom: 0px;
+    background-color: none;
+    outline: none;
+}
+
+a:hover {
+    background-color: #00f; 
+    color: #fff;
+    outline: none;
+}
+
+img {
+    border-style: none;
+    /*margin: 10px 20px 10px 0px;*/
+    margin: 0px;
+}
+
+iframe{
+    margin:20px;
+}
+
+.image-link {
+    border: none;
+}
+
+/*NAVIGATION*/
+
+.header-left {
+    position:fixed;
+    top: 22px;
+    z-index: 999;
+    left: 35px;
+}
+
+.header-right {
+    position:fixed;
+    top: 22px;
+    z-index: 999;
+    right: 35px;
+    text-align: right;
+}
+
+/*HOME*/
+
+.text-home {
+    width: 100%;
+}
+.text-home2 {
+    /*width: 100%;*/
+    max-width: 600px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.content-home {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.big-img{
+    width:700px; 
+    display:inline-block; 
+    margin: 20px;
+}
+
+.big-img img{
+    vertical-align: top;
+    max-width: 700px;
+    max-height: 400px;
+}
+
+.small-img{
+    outline: none;
+    border: none;
+    background-color:transparent;
+    margin-right: 5px;
+}
+
+.small-img img{
+    vertical-align: top;
+    max-width: 100px;
+    max-height: 50px;
+}
+
+.mini-img {
+    outline: none;
+    border-bottom: none;
+    background-color:transparent;
+    margin-right: 5px;
+}
+
+.mini-img img{
+    vertical-align: top;
+    max-width: 50px;
+    max-height: 20px;
+}
+
+hcol {
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 0px; /*44 = alçada de fer dos canvis de linia*/
+    display: block;
+}
+
+.divider {
+    width: 100%;
+    /*float: left;*/
+    height: 120px;
+}
+
+.left {
+    float: left;
+    width: 50%;
+}
+
+.right {
+    float: right;
+    width: 50%;
+}
+
+.gallery-link{
+    position: relative;
+    top:13px;
+    left:13px;
+}
+
+/*PROJECTS*/
+
+.content-home-project {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.content-about-project {
+    width: 100%;
+    display: table;
+    color: white;
+}
+
+.highlight-text-project{
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.full-img{
+    outline: none;
+    border: none;
+    background-color:transparent;
+    display:inline-block;
+}
+
+.full-img img{
+    vertical-align: top;
+    max-width: 100%;
+}
+
+/*ABOUT*/
+
+.content-about {
+    width: 100%;
+    display: table;
+}
+
+.text-about {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+.zoom {
+    position: absolute;
+    margin: 0;
+    height: 20;
+}
+
+/*media query*/
+
+@media (max-width: 800px) {
+    .left, .right {
+        float: none;
+        width: 100%;
+    }
+    
+    .mid {
+        width: 100%;   
+    }
+    
+    htitleproject{
+        top: 70px;
+        position: relative;
+    }
+    iframe{
+        width: 350px;
+        height: 197px;
+        
+    }
+    .big-img{
+        width: 310px!important;
+    }
+    .big-img img{
+        max-width: 310px!important;
+        max-height: 200px!important; 
+    }
+}

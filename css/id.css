@@ -1,0 +1,26 @@
+html, body {
+    height: 100%; /* required to make body occupy the full viewport by default */
+    margin: 0px;
+    background-color: #ffffff;
+}
+
+#container {
+    height: 100%;
+    display: flex;
+    align-items: center; /* horizontal */
+    justify-content: center; /* vertical */
+}
+
+#photo {
+    height: 100%;
+    display: flex;
+    align-items: center; /* horizontal */
+}
+
+img {
+    height: 800px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
